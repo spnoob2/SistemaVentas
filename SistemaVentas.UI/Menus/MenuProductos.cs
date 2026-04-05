@@ -16,13 +16,13 @@ namespace SistemaVentas.UI.Menus
             while (!salirproductos)
             {
                 //Menu Productos
-                Console.WriteLine("-------Menu de Productos-------");
+                Console.WriteLine("\n\n-------Menu de Productos-------");
                 Console.WriteLine(" 1 Agregar Producto");
                 Console.WriteLine(" 2 Eliminar Producto");
                 Console.WriteLine(" 3 Modificar Producto");
                 Console.WriteLine(" 4 Salir");
 
-                Console.Write("Seleccione una opcion");
+                Console.Write("\n\nSeleccione una opcion");
 
                 //Validacion
 

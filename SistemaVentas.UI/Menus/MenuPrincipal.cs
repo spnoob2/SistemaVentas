@@ -18,15 +18,15 @@ namespace SistemaVentas.UI.Menus
             while (!salir)
             {
                 //Menu Principal
-                Console.WriteLine("\n\n\n\n-------Menu Principal-------");
+                Console.WriteLine("\n\n-------Menu Principal-------");
                 Console.WriteLine(" 1 Menu Clientes");
                 Console.WriteLine(" 2 Menu Productos");
 
-                Console.Write("Seleccione una opcion ");
+                Console.Write("\n\nSeleccione una opcion ");
 
                 //Validacion
 
-                string opcion = InputHelper.LeerOpcionValida(new List<string> { "1", "2", "3" });
+                string opcion = InputHelper.LeerOpcionValida(new List<string> { "1", "2" });
 
                 if (opcion == null) continue;
 

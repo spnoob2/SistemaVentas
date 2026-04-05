@@ -15,7 +15,7 @@ namespace SistemaVentas.UI.Menus
             bool salircliente = false;
             while (!salircliente)
             {
-                Console.WriteLine("-------Menu Clientes-------");
+                Console.WriteLine("\n\n-------Menu Clientes-------");
                 Console.WriteLine(" 1 Dar alta a cliente");
                 Console.WriteLine(" 2 Dar Baja a cliente");
                 Console.WriteLine(" 3 Buscar cliente");
