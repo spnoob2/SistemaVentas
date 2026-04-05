@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SistemaVentas.Services.ClienteService;
 using SistemaVentas.UI.Helpers;
 
 namespace SistemaVentas.UI.Menus
 {
     public class MenuClientes
     {
+        public MenuClientes() { }
+        ClienteService clienteService = new ClienteService();
         public void MostrarMenuClientes() 
         {
             Console.Clear();
@@ -32,7 +35,11 @@ namespace SistemaVentas.UI.Menus
                 switch (opcioncliente)
                 {
                     case "1":
-                        //Invocar a SistemaVentas.Service
+                        Console.WriteLine("Nombre:");
+                        string nombre = Console.ReadLine();
+                        Console.WriteLine("Apellido:");
+                        string apellido = Console.ReadLine();
+                        clienteService.InputCliente(nombre,apellido);
                         break;
 
                     case "2":
